@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0a0a0a">
+  <meta name="description" content="Paisagens, encontros e histórias vistos de outro ângulo. Explore os filmes de drone da KJE VISUALS, por Kléber Erbes.">
+  <meta property="og:title" content="KJE VISUALS — Um novo ponto de vista">
+  <meta property="og:description" content="Filmes aéreos. Paisagens, encontros e histórias vistos de outro ângulo.">
+  <meta property="og:type" content="website">
+  <!-- Depois de publicar, você pode adicionar og:image com a URL pública completa de assets/entre-montanhas.webp. -->
+  <title>KJE VISUALS — Um novo ponto de vista</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" as="image" href="assets/entre-montanhas.webp" fetchpriority="high">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#trabalhos">Pular para os trabalhos</a>
+  <header class="header" id="header">
+    <a class="brand" href="#inicio" aria-label="KJE VISUALS — início"><span class="brand-main">KJE<span class="brand-dot">.</span></span><span class="brand-sub">VISUALS</span></a>
+    <nav aria-label="Navegação principal">
+      <a href="#trabalhos">Trabalhos</a>
+      <a href="#sobre">O olhar</a>
+      <a class="nav-instagram" href="https://www.instagram.com/kje.visuals/" target="_blank" rel="noopener noreferrer">Instagram <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <video class="hero-video" id="hero-video" muted loop playsinline preload="none" poster="assets/entre-montanhas.webp" aria-hidden="true" tabindex="-1" data-src="assets/hero.mp4"></video>
+      <div class="hero-shade"></div>
+      <div class="hero-topline"><span class="status-dot"></span> HISTÓRIAS VISTAS DO ALTO</div>
+      <div class="hero-content">
+        <div class="hero-title-wrap"><p class="eyebrow hero-label">KJE VISUALS — FILMES AÉREOS</p><h1 id="hero-title">Um novo<br>ponto de vista<span class="title-period">.</span></h1></div>
+        <div class="hero-intro"><p>Paisagens, encontros e histórias.<br>Vistos de onde poucos olham.</p><a class="explore-link" href="#trabalhos"><span class="circle-arrow" aria-hidden="true">↘</span><span>Explore os filmes</span></a></div>
+      </div>
+      <div class="hero-footer"><a class="scroll-hint" href="#trabalhos"><span class="scroll-line" aria-hidden="true"></span> ROLE PARA DESCOBRIR</a><span class="hero-film">01 / ENTRE MONTANHAS</span><button class="video-toggle" id="video-toggle" type="button" aria-label="Pausar vídeo de fundo"><span id="video-toggle-icon" aria-hidden="true">Ⅱ</span><span id="video-toggle-text">PAUSAR</span></button></div>
+    </section>
+
+    <section class="portfolio section-pad" id="trabalhos" aria-labelledby="works-title">
+      <div class="section-kicker reveal"><span class="eyebrow">01 / PORTFÓLIO</span><span class="eyebrow dim">UM RECORTE DE CADA VOO</span></div>
+      <div class="section-heading reveal"><h2 id="works-title">Cada voo,<br><span class="muted-text">uma nova história.</span></h2><p>Um instante muda quando a gente<br>muda a forma de olhar.</p></div>
+      <div class="filter-bar reveal"><div class="filters" role="group" aria-label="Filtrar filmes"><button type="button" class="filter active" data-filter="all" aria-pressed="true">Todos <sup>06</sup></button><button type="button" class="filter" data-filter="paisagens" aria-pressed="false">Paisagens e viagens <sup>04</sup></button><button type="button" class="filter" data-filter="eventos" aria-pressed="false">Eventos <sup>02</sup></button></div><span class="film-count" id="film-count" aria-live="polite">6 FILMES</span></div>
+      <div class="film-grid" id="film-grid">
+        <article class="film-card reveal" data-category="paisagens" data-film="entre-montanhas"><button class="film-open" type="button" aria-label="Assistir Entre montanhas"><div class="film-image"><img src="assets/entre-montanhas.webp" alt="Vista aérea de um rio, cidade e montanhas verdes sob nuvens" loading="lazy" width="1600" height="900"><div class="image-shade"></div><span class="film-index">01</span><span class="duration">00:15</span><span class="play-circle" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m9 5 11 7-11 7Z"/></svg></span><span class="watch-label">ASSISTIR FILME <span>↗</span></span></div><div class="film-info"><div><h3>Entre montanhas</h3><p>PAISAGENS E VIAGENS</p></div><span class="film-info-arrow" aria-hidden="true">↗</span></div></button></article>
+        <article class="film-card reveal" data-category="eventos" data-film="em-movimento"><button class="film-open" type="button" aria-label="Assistir Em movimento"><div class="film-image"><img src="assets/em-movimento.webp" alt="Encontro automotivo em uma pista cercada por árvores" loading="lazy" width="1600" height="900"><div class="image-shade"></div><span class="film-index">02</span><span class="duration">00:20</span><span class="play-circle" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m9 5 11 7-11 7Z"/></svg></span><span class="watch-label">ASSISTIR FILME <span>↗</span></span></div><div class="film-info"><div><h3>Em movimento</h3><p>EVENTOS · AUTOMOTIVO</p></div><span class="film-info-arrow" aria-hidden="true">↗</span></div></button></article>
+        <article class="film-card reveal portrait-card" data-category="paisagens" data-film="a-beira-mar"><button class="film-open" type="button" aria-label="Assistir À beira-mar"><div class="film-image"><img src="assets/a-beira-mar.webp" alt="Ondas do mar encontrando a faixa de areia, vistas do alto" loading="lazy" width="900" height="1600"><div class="image-shade"></div><span class="film-index">03</span><span class="duration">00:22</span><span class="play-circle" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m9 5 11 7-11 7Z"/></svg></span><span class="watch-label">ASSISTIR FILME <span>↗</span></span></div><div class="film-info"><div><h3>À beira-mar</h3><p>PAISAGENS E VIAGENS · FILME VERTICAL</p></div><span class="film-info-arrow" aria-hidden="true">↗</span></div></button></article>
+        <article class="film-card reveal" data-category="paisagens" data-film="alem-do-horizonte"><button class="film-open" type="button" aria-label="Assistir Além do horizonte"><div class="film-image"><img src="assets/alem-do-horizonte.webp" alt="Horizonte de montanhas e uma cidade sob um céu de nuvens" loading="lazy" width="1600" height="900"><div class="image-shade"></div><span class="film-index">04</span><span class="duration">00:14</span><span class="play-circle" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m9 5 11 7-11 7Z"/></svg></span><span class="watch-label">ASSISTIR FILME <span>↗</span></span></div><div class="film-info"><div><h3>Além do horizonte</h3><p>PAISAGENS E VIAGENS</p></div><span class="film-info-arrow" aria-hidden="true">↗</span></div></button></article>
+        <article class="film-card reveal" data-category="eventos" data-film="encontro-na-pista"><button class="film-open" type="button" aria-label="Assistir Encontro na pista"><div class="film-image"><img src="assets/encontro-na-pista.webp" alt="Vista aérea de uma pista com carros e público em meio à vegetação" loading="lazy" width="1600" height="900"><div class="image-shade"></div><span class="film-index">05</span><span class="duration">00:10</span><span class="play-circle" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m9 5 11 7-11 7Z"/></svg></span><span class="watch-label">ASSISTIR FILME <span>↗</span></span></div><div class="film-info"><div><h3>Encontro na pista</h3><p>EVENTOS · AUTOMOTIVO</p></div><span class="film-info-arrow" aria-hidden="true">↗</span></div></button></article>
+        <article class="film-card reveal" data-category="paisagens" data-film="ritmos-da-cidade"><button class="film-open" type="button" aria-label="Assistir Ritmos da cidade"><div class="film-image"><img src="assets/ritmos-da-cidade.webp" alt="Ruas, casas e árvores de um bairro vistos de cima" loading="lazy" width="1600" height="900"><div class="image-shade"></div><span class="film-index">06</span><span class="duration">00:10</span><span class="play-circle" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m9 5 11 7-11 7Z"/></svg></span><span class="watch-label">ASSISTIR FILME <span>↗</span></span></div><div class="film-info"><div><h3>Ritmos da cidade</h3><p>PAISAGENS E VIAGENS · URBANO</p></div><span class="film-info-arrow" aria-hidden="true">↗</span></div></button></article>
+      </div>
+    </section>
+
+    <section class="about section-pad" id="sobre" aria-labelledby="about-title">
+      <div class="about-image reveal"><img src="assets/olhar.webp" alt="Montanhas verdes e um rio em uma perspectiva aérea" loading="lazy" width="1200" height="1500"><span class="image-corner top-left"></span><span class="image-corner bottom-right"></span><span class="about-image-caption">UM OUTRO ÂNGULO. A MESMA ESSÊNCIA.</span></div>
+      <div class="about-copy reveal"><span class="eyebrow">02 / POR TRÁS DO OLHAR</span><h2 id="about-title">A perspectiva<br>muda.<br><span class="muted-text">A história fica.</span></h2><div class="about-body"><p>Sou Kléber Erbes, o olhar por trás da KJE VISUALS. Uso o drone para registrar paisagens, viagens e a energia dos encontros.</p><p>Meu portfólio reúne esses instantes: a cidade que se revela do alto, a natureza em movimento e os detalhes de cada evento.</p><a class="text-link" href="https://www.instagram.com/kje.visuals/" target="_blank" rel="noopener noreferrer">Acompanhe meu olhar <span aria-hidden="true">↗</span></a></div></div>
+    </section>
+
+    <section class="instagram section-pad" id="instagram" aria-labelledby="instagram-title"><div class="section-kicker reveal"><span class="eyebrow">03 / CONTINUE ACOMPANHANDO</span><span class="eyebrow dim">NOVOS ÂNGULOS, A CADA VOO.</span></div><div class="instagram-content reveal"><div><h2 id="instagram-title">O próximo voo<br>começa por lá.</h2><p>Novos filmes, bastidores e um pouco do que vejo do alto.</p></div><a class="instagram-button" href="https://www.instagram.com/kje.visuals/" target="_blank" rel="noopener noreferrer" aria-label="Acompanhar @kje.visuals no Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle class="instagram-dot" cx="17.5" cy="6.5" r="1"/></svg><span>@kje.visuals</span><span class="instagram-arrow" aria-hidden="true">↗</span></a></div></section>
+  </main>
+
+  <footer class="footer section-pad"><a href="#inicio" class="footer-wordmark" aria-label="KJE VISUALS — voltar ao início">KJE VISUALS<span>↗</span></a><div class="footer-bottom"><p>© <span id="year">2026</span> KJE VISUALS</p><p>POR KLÉBER ERBES</p><a href="#inicio">VOLTAR AO TOPO ↑</a></div></footer>
+
+  <dialog class="film-dialog" id="film-dialog" aria-labelledby="dialog-title"><div class="dialog-top"><div><p class="eyebrow" id="dialog-category"></p><h2 id="dialog-title"></h2></div><button type="button" id="close-dialog" class="close-dialog" aria-label="Fechar vídeo"><span aria-hidden="true">×</span></button></div><div class="player-wrap"><video id="film-player" controls playsinline muted preload="none"></video><p id="player-error" hidden>Não foi possível carregar o vídeo. <a id="video-download" href="#" target="_blank" rel="noopener">Abrir o arquivo</a></p></div><div class="dialog-bottom"><p id="dialog-description"></p><div class="dialog-navigation"><button type="button" id="previous-film" aria-label="Filme anterior">←</button><span id="dialog-counter"></span><button type="button" id="next-film" aria-label="Próximo filme">→</button></div></div></dialog>
+  <noscript><style>.reveal{opacity:1!important;transform:none!important}.film-open{cursor:default}.filters{display:none}</style><div class="noscript-note">Ative o JavaScript para explorar os filmes neste site. Você também pode acompanhar os trabalhos em <a href="https://www.instagram.com/kje.visuals/">@kje.visuals</a>.</div></noscript>
+</body>
+</html>
